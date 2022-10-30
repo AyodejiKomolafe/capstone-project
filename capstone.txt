@@ -1,0 +1,15 @@
+I want to make a nft marketplace website, which displays nfts for sale:
+
+the marketplace will have a database of available nfts by their id, name and images.
+
+users can browse through the collections available for sale.
+
+users can add the ones they like and would want to buy to cart.
+
+users can add to wishlist the ones they like but cant buy to their cart.
+
+users can post their email for newsletters from the marketplace.
+
+users can search for keyword of the names of the nft to bring up the exact one they would like to view instead of scrolling through the website.
+
+users can view their cart and wishlist and delete what they dont want from the cart and wishlist.

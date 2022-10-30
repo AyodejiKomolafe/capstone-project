@@ -1,0 +1,174 @@
+h1{
+    color: rebeccapurple;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #F4FFF8;
+    margin: 0;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+header{
+    background-color: black;
+    width: 100 vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name{
+    margin-left: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-name{
+    color: white;
+}
+
+nav{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+a{
+    color: white;
+}
+
+button{
+    background-color:red;
+    color: white;
+}
+
+#nft-container {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.nft-card {
+    background-color: turquoise;
+    width: 200px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+.nft-image{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.newsletter{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    display: flex;
+    width: 740px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sign-newsletter{
+    margin-right: 20px;
+}
+
+.tm{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30px;
+}
+
+
+
+
+
+.cart-items{
+    border-radius: 10px;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-top: 0px;
+    background-color:grey;
+    right: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.cart-image{
+    width: 50px;
+    height: 50px;
+}
+
+.cart-card{
+    width: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.delete-btn{
+    margin-top: 15px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.open{
+    opacity: 1;
+    /* position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 0px;
+    background-color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    right: 10px;
+    transition: 1s; */
+}
+
+.dark-theme{
+    background-color: red;
+    font:blue;
+}
+
+
+
