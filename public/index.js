@@ -9,6 +9,7 @@ const cartDiv = document.querySelector(".cart-items")
 const header = document.querySelector("#head")
 const submitBtn = document.querySelector("#sign-up")
 const emailInput = document.querySelector(".email")
+const signText = document.querySelector(".sign-text")
 
 
 
@@ -126,7 +127,10 @@ function submit(e){
     axios.post('http://localhost:4000/emails', body)
         .then(()=>{
             emailInput.value = ``
+        signText.textContent = "Thanks for signing up for our Newsletter"
         })
+    
+    
 
 }
 

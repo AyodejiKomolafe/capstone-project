@@ -1,6 +1,52 @@
 h1{
-    color: rebeccapurple;
+    border: 5px solid#fff;
+    animation: flicker 1.5s infinite alternate;
+    color:white;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
+
+h1:hover{
+    color: rebeccapurple;
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px rebeccapurple,
+            0 0 82px rebeccapurple,
+            0 0 92px rebeccapurple,
+            0 0 102px rebeccapurple,
+            0 0 151px rebeccapurple;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px lightgreen,
+        0 0 11px lightgreen,
+        0 0 19px lightgreen,
+        0 0 40px lightgreen,
+        0 0 80px rebeccapurple,
+        0 0 90px rebeccapurple,
+        0 0 100px rebeccapurple,
+        0 0 150px rebeccapurple;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
 
 main{
     display: flex;
@@ -55,13 +101,29 @@ button{
     color: white;
 }
 
+button:hover{
+    border:solid 2px black;
+    background-color: lightgreen;
+    color:black;
+    transform:
+    scale(1.1)
+}
+
+button:active {
+    transform:
+      scale(1)
+  }
+
+
 #nft-container {
-    width: 800px;
+    max-width: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
   }
+
 
 .nft-card {
     background-color: turquoise;
@@ -152,22 +214,77 @@ footer{
 
 .open{
     opacity: 1;
-    /* position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-top: 0px;
-    background-color:red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    right: 10px;
-    transition: 1s; */
+}
+
+.add-button{
+    margin-bottom: 10px;
 }
 
 .dark-theme{
     background-color: red;
     font:blue;
+}
+
+
+@media screen and (max-width: 700px){
+h1{
+    font-size: 30px;
+}
+.header-name{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+nav{
+    width: 170px;
+    font-size: 10px;
+}
+
+.logo-name{
+    width: 200px;
+}
+
+#search{
+    width: 40px;
+    font-size: 5px;
+}
+
+.name-input{
+    width: 50px;
+    height: 8px;
+}
+
+.tm{
+    font-size: 10px;
+    
+}
+
+.sign-text{
+    font-size: 10px;
+}
+
+#sign-up{
+    width: 40px;
+    font-size: 5px;
+}
+
+.email{
+    width: 50px;
+    height: 8px;
+}
+
+.newsletter{
+    width: 450px;
+}
+
+.sign-newsletter{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+#nft-container {
+    margin-bottom: 50px;
+}
 }
 
 

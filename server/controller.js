@@ -15,15 +15,21 @@ module.exports = {
     seed: (req, res) => {
         sequelize.query(`
             drop table if exists nfts;
+            drop table if exists emails;
+
             CREATE TABLE nfts (
                 nft_id SERIAL PRIMARY KEY,
                 name VARCHAR,
                 imageUrl VARCHAR
             );
+
             CREATE TABLE emails (
                 email_id SERIAL PRIMARY KEY,
                 email VARCHAR
             );
+
+            INSERT INTO emails (email)
+            values('kvng@gmail.com');
 
             INSERT INTO nfts (name, imageUrl)
             values('Goat Society 9598', 'https://tinyurl.com/2p92jckj'),
@@ -37,10 +43,16 @@ module.exports = {
             ('Moon Boyz #2318', 'https://tinyurl.com/ywkfu94u'),
             ('Ameegos #839', 'https://tinyurl.com/zhhdyusb'),
             ('Crazy Camel #143', 'https://tinyurl.com/yckcxkyf'),
-            ('SpaceBoys #1052', 'https://tinyurl.com/mr2w3tfu');
-
-            INSERT INTO emails (email)
-            values('kaapeko@gmail.com')
+            ('SpaceBoys #1052', 'https://tinyurl.com/mr2w3tfu'),
+            ('Boohooverse Collection #470' , 'https://tinyurl.com/2hyxnynk'),
+            ('Surge Women Passport #2816', 'https://tinyurl.com/2p97h3f4'),
+            ('Pleb Punk #862', 'https://tinyurl.com/y8fv3rys'),
+            ('Goat Society #4154', 'https://tinyurl.com/npb9tn3j'),
+            ('Trooper #4878', 'https://tinyurl.com/4uyh2w97'),
+            ('MiniPet #21', 'https://tinyurl.com/5yn8fdhp'),
+            ('Afrodroids #475', 'https://tinyurl.com/4a4p427h'),
+            ('Boohooverse Collection #469', 'https://tinyurl.com/57542k6v'),
+            ('Lonely Heart #1615', 'https://tinyurl.com/yecjp7nc');  
         `)
         .then(()=>{
             console.log("DB seeded")
