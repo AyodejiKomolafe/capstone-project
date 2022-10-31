@@ -15,6 +15,7 @@ h1{
 }
 
 h1:hover{
+    cursor: pointer;
     color: rebeccapurple;
     text-shadow:
             0 0 7px #fff,
@@ -85,6 +86,7 @@ header{
 }
 
 nav{
+    cursor: pointer;
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -97,11 +99,13 @@ a{
 }
 
 button{
+    cursor: pointer;
     background-color:red;
     color: white;
 }
 
 button:hover{
+    cursor: pointer;
     border:solid 2px black;
     background-color: lightgreen;
     color:black;
@@ -232,7 +236,7 @@ h1{
 }
 .header-name{
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 nav{
@@ -288,4 +292,35 @@ nav{
 }
 
 
+@media screen and (max-width: 900px){
+    .tm{
+        font-size: 10px;
+        
+    }
+    
+    .sign-text{
+        font-size: 8px;
+    }
+    
+    #sign-up{
+        width: 40px;
+        font-size: 5px;
+    }
+    
+    .email{
+        width: 50px;
+        height: 8px;
+    }
+    
+    .newsletter{
+        width: 450px;
+        margin-left: 100px;
+    }
+    
+    .sign-newsletter{
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 0;
+    }
 
+}
