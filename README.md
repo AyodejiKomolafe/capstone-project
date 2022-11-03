@@ -26,7 +26,7 @@ Install my-project with npm i for all the dependencies used
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[link to live website](https://kvng-eko-nft-marketplace.herokuapp.com/)
 
 
 ## 🚀 About Me

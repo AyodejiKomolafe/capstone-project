@@ -173,10 +173,9 @@ function submit(e){
             emailInput.value = ``
         signText.textContent = "Thanks for signing up for our Newsletter"
         })
-    
-    
-
 }
+
+
 
 function changeCircle(){
     circleContainer.classList.toggle("change-flex")
