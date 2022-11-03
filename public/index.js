@@ -107,7 +107,7 @@ checkOutBtn.addEventListener("click", function(event){
     count = 0
     cartKount.textContent = 0
     alert ("Thank you for shopping with us today, your nfts will be delivered to your Eth wallet shortly");
-    cartItem.classList.add("close")
+    cartItem.classList.toggle("open")
 
 })
 
