@@ -121,7 +121,7 @@ function deleteCart(event){
 
 
 function getAllNft() {
-    axios.get('http://localhost:4000/nfts')
+    axios.get('/nfts')
     .then(res => {
         res.data.forEach(nft => {
             createNftCard(nft)
@@ -140,7 +140,7 @@ function getNft(event) {
     event.preventDefault()
     clearNft()
     if(nameInput.value != ``){
-    axios.get(`http://localhost:4000/nfts/${nameInput.value}`)
+    axios.get(`/nfts/${nameInput.value}`)
     .then(response => {
         console.log(response.data)
         response.data.forEach(nft => createNftCard(nft))
@@ -168,7 +168,7 @@ function submit(e){
     let body = {
         email: emailInput.value
     }
-    axios.post('http://localhost:4000/emails', body)
+    axios.post('/emails', body)
         .then(()=>{
             emailInput.value = ``
         signText.textContent = "Thanks for signing up for our Newsletter"
