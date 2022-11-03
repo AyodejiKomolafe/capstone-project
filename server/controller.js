@@ -32,8 +32,8 @@ module.exports = {
             values('kvng@gmail.com');
 
             INSERT INTO nfts (name, imageUrl)
-            values('Goat Society 9598', 'https://tinyurl.com/2p92jckj'),
-            ('You 2028 By MyBFF', 'https://tinyurl.com/y6he6vmt'),
+            values('Goat Society #9598', 'https://tinyurl.com/2p92jckj'),
+            ('You #2028 By MyBFF', 'https://tinyurl.com/y6he6vmt'),
             ('Gummies Gang #5532', 'https://tinyurl.com/2pnu85cx'),
             ('CatBlox #8713','https://tinyurl.com/aaurue4d'),
             ('BFF Bracelet', 'https://tinyurl.com/c4cny4yz'),

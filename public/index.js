@@ -5,14 +5,19 @@ const cartItem = document.querySelector(".cart-items")
 const cart = document.querySelector("#cart")
 const search = document.querySelector("#search")
 const nameInput = document.querySelector(".name-input")
-const cartDiv = document.querySelector(".cart-items")
+const cartDiv = document.querySelector(".items")
 const header = document.querySelector("#head")
 const submitBtn = document.querySelector("#sign-up")
 const emailInput = document.querySelector(".email")
 const signText = document.querySelector(".sign-text")
-
-
-
+const body = document.querySelector("body")
+const footer = document.querySelector("footer")
+const nftCard = document.querySelector(".nft-card")
+const circleContainer = document.querySelector(".cicle-container")
+const checkOutBtn = document.querySelector(".check-out")
+const cartCard = document.querySelector(".cart-card")
+const cartKount = document.querySelector(".kount")
+const cartItems = document.querySelector(".cart-items")
 
 
 
@@ -20,10 +25,12 @@ function clearNft() {
     nftContainer.innerHTML = ``
 }
 
+
+
 function createNftCard(nft) {
     const allNft = document.createElement("div")
+    allNft.classList.add(`nft-${nft.id}`)
     allNft.classList.add("nft-card")
-    allNft.setAttribute("key",nft.id)
     const nftCard = 
     `<img class="nft-image" src=${nft.imageurl} alt="nft image"/>
     <p>${nft.name}</p>
@@ -34,12 +41,36 @@ function createNftCard(nft) {
     newBtn.textContent = "Add to Cart"
     newBtn.addEventListener("click", function () {
         addToCart(nft)
+        cartCount()
     })
+   
     
     allNft.appendChild(newBtn)
     nftContainer.appendChild(allNft)
 }
 
+let count = 0;
+function cartCount(){
+    
+    count = count + 1;
+    if(count===1){
+    cartKount.textContent="1"
+    }else if(count > 6) {
+        cartItems.classList.add("extend")
+        cartKount.textContent = count;
+    }else{
+        cartKount.textContent = count;
+    }
+}
+
+function cartReduce(){
+    count = count - 1;
+    if(count === 0){
+        cartKount.textContent ="0"
+    }else{
+        cartKount.textContent = count;
+    }
+}
 
 
 
@@ -61,17 +92,28 @@ function addToCart(nft){
     delBtn.addEventListener("click", function (event) {
         event.preventDefault()
         deleteCart(event)
+        cartReduce()
     })
+   
         addedToCart.appendChild(delBtn)
         cartDiv.appendChild(addedToCart)
+
 }
 
+
+checkOutBtn.addEventListener("click", function(event){
+    event.preventDefault()
+    cartDiv.innerHTML=""
+    count = 0
+    cartKount.textContent = 0
+    alert ("Thank you for shopping with us today, your nfts will be delivered to your Eth wallet shortly");
+    cartItem.classList.add("close")
+
+})
 
 
 function deleteCart(event){
     event.target.parentNode.remove()
-    
-
 }
 
 
@@ -108,11 +150,13 @@ function getNft(event) {
     nameInput.value = ``
 }
 
-// function darkTheme(){
-//     header.classList.add("dark-theme")
-// }
+function darkTheme(){
+    body.classList.toggle("dark-theme");
+    header.classList.toggle("theme-border");
+    footer.classList.toggle("theme-border");
+    nftCard.classList.toggle("theme-border");
+}
 
-// darkTheme()
 
 function submit(e){
     e.preventDefault()
@@ -133,6 +177,14 @@ function submit(e){
     
 
 }
+
+function changeCircle(){
+    circleContainer.classList.toggle("change-flex")
+    darkTheme()
+}
+
+
+circleContainer.addEventListener("click",changeCircle)
 
 
 
