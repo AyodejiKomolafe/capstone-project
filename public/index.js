@@ -1,5 +1,3 @@
-
-
 const nftContainer = document.querySelector("#nft-container")
 const cartItem = document.querySelector(".cart-items")
 const cart = document.querySelector("#cart")

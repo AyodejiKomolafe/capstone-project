@@ -418,6 +418,7 @@ h1{
 .header-name{
     margin-left: 10px;
     font-size: 10px;
+    max-width: 40px;
 }
 
 nav{
@@ -426,7 +427,7 @@ nav{
 }
 
 .logo-name{
-    width: 150px;
+    max-width: 150px;
 }
 
 #search{
