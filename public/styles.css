@@ -404,12 +404,12 @@ nav{
 
 @media screen and (max-width: 435px){
 .cicle-container{
-    width: 15px;
+    width: 17px;
     height: 10px;
 
 }
 .first-circle{
-    width: 10px;
+    width: 12px;
     height: 10px;
 }
 h1{
@@ -417,26 +417,28 @@ h1{
 }
 .header-name{
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 nav{
-    max-width: 120px;
+    max-width: 140px;
     font-size: 8px;
 }
 
 .logo-name{
     max-width: 100px;
+    margin-left: 5px;
 }
 
 #search{
-    width: 25px;
+    width: 30px;
     font-size: 4px;
 }
 
 .name-input{
-    width: 20px;
-    height: 4px;
+    width: 30px;
+    height: 6px;
+    font-size: 6px;
 }
 
 .tm{
