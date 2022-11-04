@@ -76,7 +76,7 @@ header{
 }
 .logo-name{
     margin-left: 20px;
-    width: 350px;
+    /* width: 350px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,7 +298,7 @@ footer{
     height: 10px;
 }
 h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 .header-name{
     margin-left: 10px;
@@ -382,7 +382,7 @@ nav{
     
     .newsletter{
         width: 450px;
-        margin-left: 100px;
+        margin-left: 20px;
     }
     
     .sign-newsletter{
@@ -402,9 +402,9 @@ nav{
 }
 
 
-@media screen and (max-width: 395px){
+@media screen and (max-width: 435px){
 .cicle-container{
-    width: 20px;
+    width: 15px;
     height: 10px;
 
 }
@@ -413,7 +413,7 @@ nav{
     height: 10px;
 }
 h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 .header-name{
     margin-left: 10px;
@@ -421,22 +421,22 @@ h1{
 }
 
 nav{
-    width: 160px;
+    max-width: 120px;
     font-size: 8px;
 }
 
 .logo-name{
-    max-width: 150px;
+    max-width: 100px;
 }
 
 #search{
-    width: 40px;
-    font-size: 5px;
+    width: 25px;
+    font-size: 4px;
 }
 
 .name-input{
-    width: 30px;
-    height: 8px;
+    width: 20px;
+    height: 4px;
 }
 
 .tm{
